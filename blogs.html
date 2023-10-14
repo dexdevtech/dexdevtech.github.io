@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/blogs.css">
+
+    <!-- ICONSCOUT CDN -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- GOOGLE FONT MONTSERRAT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- SWIPERJS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <title>DexDev Tech</title>
+
+    <style>
+        section {
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav__container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/dexdex_logo_white.png" alt="website logo">
+                </a>
+            </div>
+            <div class="nav__links">
+                <ul>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="projects.html">PROJECTS</a></li>
+                    <li><a href="blogs.html">BLOGS</a></li>
+                </ul>
+            </div>
+            <div class="nav__cto">
+                <a href="reach_out.html">REACH OUT</a>
+            </div>
+            <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+            <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+        </div>
+    </nav>
+
+    <!-- BLOGS -->
+    <section class="blogs">
+        <h2>BLOG POST</h2>
+        <div class="container blogs__container">
+            <div class="blog__left">
+                <div class="blogs__list">
+                    <h5>Other Interesting Topics:</h5>
+                    <blogs>
+                        <button>Is Engineering License Still Valuable?</button>
+                        <button>Automating Google Work Space.</button>
+                        <button>Managing Multiple GitHub Accounts from One Computer.</button>
+                    </blogs>
+                </div>
+                <div class="newsletter_">
+                    <h5>Don't miss the weekly blogposts!</h5>
+                    <form method="post" autocomplete="off" name="google-sheet-newsletter" id="regform_newsletter">
+                        <input type="email" name="email_newsletter" placeholder="Newsletter" autocomplete="off" required>
+                        <input type="submit" value="SUBSCRIBE" name="submit" onclick="clearForNewsletter()">
+                    </form>
+                </div>
+                <div class="socials">
+                    <h5>Follow dexdevtech on Social Media.</h5>
+                    <ul class="blog__socials">
+                        <li><a href="https://github.com/dexdevtech" target="_blank"><i class="uil uil-github"></i></a></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=61552256330753&is_tour_dismissed=true" target="_blank"><i class="uil uil-facebook"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCp1jk1grgFMFlhc44YZxp3Q" target="_blank"><i class="uil uil-youtube"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/dexdev-tech-42a946294/" target="_blank"><i class="uil uil-linkedin"></i></a></li>
+                        <li><a href="https://twitter.com/dexdevtech" target="_blank"><i class="uil uil-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/dexdev/" target="_blank"><i class="uil uil-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="check_out">
+                    <h5>Check out These Amazing Channels.</h5>
+                    <a href="https://engineering.fb.com/" target="_blank"><button>Engineering At Meta</button></a>
+                    <a href="https://www.techwithtim.net/" target="_blank"><button>Tech With Tim</button></a>
+                    <a href="https://www.freecodecamp.org/" target="_blank"><button>freecodecamp</button></a>
+                    <a href="https://open.spotify.com/show/6Ol9sx1lONDxBSffLW9qcZ" target="_blank"><button>Talk Python To Me</button></a>
+                    <a href="https://www.mattdavella.com/" target="_blank"><button>Matt D' Avella</button></a>
+                    <a href="https://www.youtube.com/@EGATORTUTORIALS" target="_blank"><button>Egator Tutorials</button></a>
+                </div>
+            </div>
+            <div class="blog__right">
+                <div class="blog">
+                    <div class="blog__data">
+                        <h3>Leveraging Web Development for Seamless Deployment of Machine Learning Models.</h3>
+                        <small class="author">Dexter Astorga</small>
+                        <small class="release_date">October 13, 2023</small>
+                    </div>
+                    <div class="blog__article">
+                        <div class="blog__image">
+                            <img src="images/ml_web_dev.jpg" alt="">
+                        </div>
+                        <small class="image__link">Photo by <a href="https://unsplash.com/@growtika?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank">Growtika</a> on Unsplash.</small>
+                        <p>Web development and machine learning are two disciplines so different from each other. They are both powerful on their own but together, they create an even more powerful team. By harnessing the artificial intelligence from machine learning and combining it with the omnipresence of web development, we create the monstrosity that is machine learning-powered web applications.</p>
+                        <p>Let’s first talk about what they are. The process of building and maintaining websites and applications with a focus on design, functionality, and user experience is known as web development. Machine learning, on the other hand, entails teaching computers to learn from data and make judgments or predictions.</p>
+                        <p>Due to their ubiquitous accessibility, web apps make an excellent deployment medium for machine learning models. Regardless of their location or device, they allow consumers to easily interact with these models. Additionally, a seamless user experience is made possible by how easily machine learning models can be integrated into web infrastructure. Users will always have access to the most recent information and forecasts thanks to the smooth rollout of real-time updates and upgrades to the models through web applications.</p>
+                        <p>Although there are many benefits to incorporating machine learning models into web apps, there are also difficulties. The management of the size and complexity of these models while maintaining optimal performance remains a critical factor. To protect sensitive information, data security is of the utmost significance, needing strong encryption mechanisms and privacy safeguards. Additionally, it takes careful planning and execution to scale web applications to handle a rising user base and increased data quantities.</p>
+                        <p>Careful attention to recommended practices is necessary for the successful deployment of machine learning models via web development. It is crucial to choose a framework that complies with the model's specific criteria. The overall user experience is improved by creating simple, intuitive user interfaces that make it easier to deal with complicated algorithms. The deployed models are continually tested and monitored to provide the best performance and dependability.</p>
+                        <p>There exists websites that offers free deployment of machine learning models but creating one for yourself introduces customizability and personalization.</p>
+                        <p>The seamless fusion of machine learning deployment and web development is poised to change a number of industries, opening the door for improved decision-making procedures and individualized user experiences. We predict a boom of cutting-edge apps that take advantage of this dynamic synergy as technology develops, revolutionizing how businesses engage with their people and data.</p>
+                        <p>Technology has advanced significantly with the use of web development as a deployment platform for machine learning models. Utilizing the adaptability and accessibility of web apps, businesses may democratize the usage of sophisticated algorithms, enabling consumers to make data-driven decisions with ease. As we move to the future, the seamless integration of web development and machine learning deployment is slated to alter how organizations run and engage with their audiences, ushering in a new era of intelligent, user-centric applications.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer_container">
+            <div class="footer__left">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/dexdex_logo_white.png" alt="website logo">
+                    </a>
+                </div>
+                <h3>Fueling innovation through the art of programming, I'm on a mission to ignite your creative spark and bring your ideas to life.</h3>
+            </div>
+            <div class="footer__right">
+                <ul class="footer__socials">
+                    <li><a href="https://github.com/dexdevtech" target="_blank"><i class="uil uil-github"></i></a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=61552256330753&is_tour_dismissed=true" target="_blank"><i class="uil uil-facebook"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCp1jk1grgFMFlhc44YZxp3Q" target="_blank"><i class="uil uil-youtube"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/dexdev-tech-42a946294/" target="_blank"><i class="uil uil-linkedin"></i></a></li>
+                    <li><a href="https://twitter.com/dexdevtech" target="_blank"><i class="uil uil-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/dexdev/" target="_blank"><i class="uil uil-instagram"></i></a></li>
+                </ul>
+                <div class="newsletter">
+                    <div class="newsletter-button">
+                        <form method="post" autocomplete="off" name="google-sheet-newsletter" id="regform_newsletter">
+                            <input type="email" name="email_newsletter" placeholder="Newsletter" autocomplete="off" required>
+                            <input type="submit" value="SUBSCRIBE" name="submit" onclick="clearForNewsletter()">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <p>dexdev tech freelance &copy</p>
+            <small>Most icons used are from <a href="https://iconscout.com/" target="_blank">IconScout</a>.</small>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- NEWSLETTER FORM -->
+    <script>
+        const scriptURLNewsletter = 'https://script.google.com/macros/s/AKfycbwK-Shi9hu3MHjAchhdonFsuQPM8wRt5SAXhKR5_Oy4k2j1gr0iTpHLtEU2MjdBZgtxaA/exec';
+        const formNewsletter = document.forms['google-sheet-newsletter'];
+
+        formNewsletter.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURLNewsletter, {method: 'POST', body: new FormData(formNewsletter)})
+                .then(response => alert("Thank you for subscribing to the dexdevtech newsletter!"))
+                .cath(error => console.error('Error!', error.message))
+        })
+    </script>
+
+    <!-- SCRIPT FOR AUTODELETE -->
+    <script>
+        function clearForNewsletter() {
+            var form = document.getElementById('regform_newsletter');
+            
+            setTimeout(function() {
+                form.reset();
+            }, 11000)
+        }
+    </script>
+</body>
+</html>

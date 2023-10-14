@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reach_out.css">
+
+    <!-- ICONSCOUT CDN -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- GOOGLE FONT MONTSERRAT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- SWIPERJS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <style>
+        section {
+            margin-top: 4rem;
+        }
+    </style>
+
+    <title>DexDev Tech</title>
+</head>
+<body>
+    <nav>
+        <div class="nav__container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/dexdex_logo_white.png" alt="website logo">
+                </a>
+            </div>
+            <div class="nav__links">
+                <ul>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="projects.html">PROJECTS</a></li>
+                    <li><a href="blogs.html">BLOGS</a></li>
+                </ul>
+            </div>
+            <div class="nav__cto">
+                <a href="reach_out.html">REACH OUT</a>
+            </div>
+            <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+            <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+        </div>
+    </nav>
+
+    <!-- CONTACT -->
+    <section class="contact">
+        <h2>LET'S GET TO BUSINESS!</h2>
+        <div class="container contact__container">
+            <form class="form__structure contact__form" method="post" autocomplete="off" name="google-sheet" id="regform">
+                <div class="form__name">
+                    <input type="text" name="first_name" placeholder="First Name" autocomplete="off" required>
+                    <input type="text" name="last_name" placeholder="Last Name" autocomplete="off" required>
+                </div>
+                <div class="email__birthday">
+                    <input type="email" name="email" placeholder="Email" autocomplete="off" required>
+                    <input type="date" name="birthday" placeholder="Birthday" autocomplete="off" required>
+                </div>
+                <input type="text" name="address" placeholder="Address" autocomplete="off" required>
+                <textarea name="message" rows="10" placeholder="Message" autocomplete="off" required></textarea>
+                <div class="submit">
+                    <input class="btn btn-primary" type="submit" value="SUBMIT" name="submit" onclick="clearForm()">
+                </div>
+            </form>
+            <aside class="contact__aside">
+                    <div class="aside__wrapper">
+                        <h2>Fill out the form.</h2>
+                        <p>Looking forward to work with you! Expect an email confirmation in 1-2 business
+                            days. While waiting, check out our blogposts <a style="text-decoration: underline;" href="blogs.html">here</a>.
+                        </p>
+                        <ul class="contact__socials">
+                            <li><a href="https://github.com/dexdevtech" target="_blank"><i class="uil uil-github"></i></a></li>
+                            <li><a href="https://www.facebook.com/profile.php?id=61552256330753&is_tour_dismissed=true" target="_blank"><i class="uil uil-facebook"></i></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCp1jk1grgFMFlhc44YZxp3Q" target="_blank"><i class="uil uil-youtube"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/dexdev-tech-42a946294/" target="_blank"><i class="uil uil-linkedin"></i></a></li>
+                            <li><a href="https://twitter.com/dexdevtech" target="_blank"><i class="uil uil-twitter"></i></a></li>
+                            <li><a href="https://www.instagram.com/dexdev/" target="_blank"><i class="uil uil-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer_container">
+            <div class="footer__left">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/dexdex_logo_white.png" alt="website logo">
+                    </a>
+                </div>
+                <h3>Fueling innovation through the art of programming, I'm on a mission to ignite your creative spark and bring your ideas to life.</h3>
+            </div>
+            <div class="footer__right">
+                <ul class="footer__socials">
+                    <li><a href="https://github.com/dexdevtech" target="_blank"><i class="uil uil-github"></i></a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=61552256330753&is_tour_dismissed=true" target="_blank"><i class="uil uil-facebook"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCp1jk1grgFMFlhc44YZxp3Q" target="_blank"><i class="uil uil-youtube"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/dexdev-tech-42a946294/" target="_blank"><i class="uil uil-linkedin"></i></a></li>
+                    <li><a href="https://twitter.com/dexdevtech" target="_blank"><i class="uil uil-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/dexdev/" target="_blank"><i class="uil uil-instagram"></i></a></li>
+                </ul>
+                <div class="newsletter">
+                    <div class="newsletter-button">
+                        <form method="post" autocomplete="off" name="google-sheet-newsletter" id="regform_newsletter">
+                            <input type="email" name="email_newsletter" placeholder="Newsletter" autocomplete="off" required>
+                            <input type="submit" value="SUBSCRIBE" name="submit" onclick="clearForNewsletter()">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <p>dexdev tech freelance &copy</p>
+            <small>Most icons used are from <a href="https://iconscout.com/" target="_blank">IconScout</a>.</small>
+        </div>
+    </footer>
+
+    
+    <script src="js/main.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <!-- MAIN FORM -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw9a2ccalSfjnhZd2WOgjCibrYEVuZ5q2sMYdrsL4GhLJ02-fw9kpa2StIf6NA0bwM/exec';
+        const form = document.forms['google-sheet'];
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {method: 'POST', body: new FormData(form)})
+                .then(response => alert("Hello, thanks for reaching out. We've received your inquiry. Expect a confirmation email in 1-2 business days. Looking forward to work with you!"))
+                .cath(error => console.error('Error!', error.message))
+        })
+    </script>
+
+    <!-- NEWSLETTER FORM -->
+    <script>
+        const scriptURLNewsletter = 'https://script.google.com/macros/s/AKfycbwK-Shi9hu3MHjAchhdonFsuQPM8wRt5SAXhKR5_Oy4k2j1gr0iTpHLtEU2MjdBZgtxaA/exec';
+        const formNewsletter = document.forms['google-sheet-newsletter'];
+
+        formNewsletter.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURLNewsletter, {method: 'POST', body: new FormData(formNewsletter)})
+                .then(response => alert("Thank you for subscribing to the dexdevtech newsletter!"))
+                .cath(error => console.error('Error!', error.message))
+        })
+    </script>
+
+    <!-- SCRIPT FOR AUTODELETE -->
+    <script>
+        function clearForm() {
+            var form = document.getElementById('regform');
+            
+            setTimeout(function() {
+                form.reset();
+            }, 11000)
+        }
+
+        function clearForNewsletter() {
+            var form = document.getElementById('regform_newsletter');
+            
+            setTimeout(function() {
+                form.reset();
+            }, 11000)
+        }
+    </script>
+
+</body>
+</html>
