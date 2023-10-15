@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/dexdex_favicon.png" type="image/x-icon">
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
@@ -140,7 +141,7 @@
                 <div class="newsletter">
                     <div class="newsletter-button">
                         <form method="post" autocomplete="off" name="google-sheet-newsletter" id="regform_newsletter">
-                            <input type="email" name="email_newsletter" placeholder="Newsletter" autocomplete="off" required>
+                            <input type="email" name="email" placeholder="Newsletter" autocomplete="off" required>
                             <input type="submit" value="SUBSCRIBE" name="submit" onclick="clearForNewsletter()">
                         </form>
                     </div>
@@ -150,6 +151,7 @@
         <div class="footer__copyright">
             <p>dexdev tech freelance &copy</p>
             <small>Most icons used are from <a href="https://iconscout.com/" target="_blank">IconScout</a>.</small>
+            <small>Website design idea from <a href="https://www.youtube.com/@EGATORTUTORIALS" target="_blank">Egator</a>.</small>
         </div>
     </footer>
 
@@ -159,7 +161,7 @@
 
     <!-- NEWSLETTER FORM -->
     <script>
-        const scriptURLNewsletter = 'https://script.google.com/macros/s/AKfycbwK-Shi9hu3MHjAchhdonFsuQPM8wRt5SAXhKR5_Oy4k2j1gr0iTpHLtEU2MjdBZgtxaA/exec';
+        const scriptURLNewsletter = 'https://script.google.com/macros/s/AKfycbzzECsD-i7AaZdwjrlQT6Oz6hVxbWLy9dY1BZV5g9cfUDCeBMjy1uRTVnFDKD9ryoWr/exec';
         const formNewsletter = document.forms['google-sheet-newsletter'];
 
         formNewsletter.addEventListener('submit', e => {

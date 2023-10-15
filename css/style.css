@@ -20,8 +20,6 @@ li {
 
 :root {
     --color-primary: #ff6363;
-    --color-success: #33d6a0;
-    --color-warning: #f0d280;
     --color-danger: #f74e4e;
     --color-danger-variant: rgba(247, 88, 66, 0.4);
     
