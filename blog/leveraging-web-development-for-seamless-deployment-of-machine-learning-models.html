@@ -6,8 +6,8 @@
     <link rel="icon" href="images/dexdex_favicon.png" type="image/x-icon">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/blogs.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/blogs.css">
 
     <!-- ICONSCOUT CDN -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
@@ -20,7 +20,7 @@
     <!-- SWIPERJS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
-    <title>DexDev Tech</title>
+    <title>dexdev tech</title>
 
     <style>
         section {
@@ -32,19 +32,19 @@
     <nav>
         <div class="nav__container">
             <div class="logo">
-                <a href="index.html">
-                    <img src="images/dexdex_logo_white.png" alt="website logo">
+                <a href="/index.html">
+                    <img src="/images/dexdex_logo_white.png" alt="website logo">
                 </a>
             </div>
             <div class="nav__links">
                 <ul>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="projects.html">PROJECTS</a></li>
-                    <li><a href="blogs.html">BLOGS</a></li>
+                    <li><a href="/about.html">ABOUT</a></li>
+                    <li><a href="/projects.html">PROJECTS</a></li>
+                    <li><a href="leveraging-web-development-for-seamless-deployment-of-machine-learning-models.html">BLOGS</a></li>
                 </ul>
             </div>
             <div class="nav__cto">
-                <a href="reach_out.html">REACH OUT</a>
+                <a href="/reach_out.html">REACH OUT</a>
             </div>
             <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
             <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
@@ -59,15 +59,15 @@
                 <div class="blogs__list">
                     <h5>Other Interesting Topics:</h5>
                     <blogs>
-                        <button>Is Engineering License Still Valuable?</button>
-                        <button>Automating Google Work Space.</button>
-                        <button>Managing Multiple GitHub Accounts from One Computer.</button>
+                        <button><a href="how-to-configure-multiple-github-accounts-on-windows-11.html">How to Configure Multiple GitHub Accounts in One Windows 11.</a></button>
+                        <button><a href="automating-google-workspace.html">Automating Google Workspace.</a></button>
+                        <button><a href="where-do-we-get-energy.html">Where do we Get Energy?</a></button>
                     </blogs>
                 </div>
                 <div class="newsletter_">
                     <h5>Don't miss the weekly blogposts!</h5>
                     <form method="post" autocomplete="off" name="google-sheet-newsletter" id="regform_newsletter">
-                        <input type="email" name="email_newsletter" placeholder="Newsletter" autocomplete="off" required>
+                        <input type="email" name="email" placeholder="Newsletter" autocomplete="off">
                         <input type="submit" value="SUBSCRIBE" name="submit" onclick="clearForNewsletter()">
                     </form>
                 </div>
@@ -101,7 +101,7 @@
                     </div>
                     <div class="blog__article">
                         <div class="blog__image">
-                            <img src="images/ml_web_dev.jpg" alt="">
+                            <img src="/images/blog_photos/ml_web_dev.jpg" alt="">
                         </div>
                         <small class="image__link">Photo by <a href="https://unsplash.com/@growtika?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank">Growtika</a> on Unsplash.</small>
                         <p>Web development and machine learning are two disciplines so different from each other. They are both powerful on their own but together, they create an even more powerful team. By harnessing the artificial intelligence from machine learning and combining it with the omnipresence of web development, we create the monstrosity that is machine learning-powered web applications.</p>
@@ -124,7 +124,7 @@
             <div class="footer__left">
                 <div class="logo">
                     <a href="index.html">
-                        <img src="images/dexdex_logo_white.png" alt="website logo">
+                        <img src="/images/dexdex_logo_white.png" alt="website logo">
                     </a>
                 </div>
                 <h3>Fueling innovation through the art of programming, I'm on a mission to ignite your creative spark and bring your ideas to life.</h3>
@@ -141,7 +141,7 @@
                 <div class="newsletter">
                     <div class="newsletter-button">
                         <form method="post" autocomplete="off" name="google-sheet-newsletter" id="regform_newsletter">
-                            <input type="email" name="email" placeholder="Newsletter" autocomplete="off" required>
+                            <input type="email" name="email" placeholder="Newsletter" autocomplete="off">
                             <input type="submit" value="SUBSCRIBE" name="submit" onclick="clearForNewsletter()">
                         </form>
                     </div>
@@ -155,13 +155,13 @@
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="/js/main.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- NEWSLETTER FORM -->
     <script>
-        const scriptURLNewsletter = 'https://script.google.com/macros/s/AKfycbzzECsD-i7AaZdwjrlQT6Oz6hVxbWLy9dY1BZV5g9cfUDCeBMjy1uRTVnFDKD9ryoWr/exec';
+        const scriptURLNewsletter = 'https://script.google.com/macros/s/AKfycbwK-Shi9hu3MHjAchhdonFsuQPM8wRt5SAXhKR5_Oy4k2j1gr0iTpHLtEU2MjdBZgtxaA/exec';
         const formNewsletter = document.forms['google-sheet-newsletter'];
 
         formNewsletter.addEventListener('submit', e => {
@@ -171,6 +171,8 @@
                 .cath(error => console.error('Error!', error.message))
         })
     </script>
+
+    
 
     <!-- SCRIPT FOR AUTODELETE -->
     <script>

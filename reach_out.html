@@ -26,7 +26,7 @@
         }
     </style>
 
-    <title>DexDev Tech</title>
+    <title>dexdev tech</title>
 </head>
 <body>
     <nav>
@@ -40,7 +40,7 @@
                 <ul>
                     <li><a href="about.html">ABOUT</a></li>
                     <li><a href="projects.html">PROJECTS</a></li>
-                    <li><a href="blogs.html">BLOGS</a></li>
+                    <li><a href="blog/leveraging-web-development-for-seamless-deployment-of-machine-learning-models.html">BLOGS</a></li>
                 </ul>
             </div>
             <div class="nav__cto">
@@ -57,15 +57,15 @@
         <div class="container contact__container">
             <form class="form__structure contact__form" method="post" autocomplete="off" name="google-sheet" id="regform">
                 <div class="form__name">
-                    <input type="text" name="first_name" placeholder="First Name" autocomplete="off" required>
-                    <input type="text" name="last_name" placeholder="Last Name" autocomplete="off" required>
+                    <input type="text" name="first_name" placeholder="First Name" autocomplete="off">
+                    <input type="text" name="last_name" placeholder="Last Name" autocomplete="off">
                 </div>
                 <div class="email__birthday">
-                    <input type="email" name="email" placeholder="Email" autocomplete="off" required>
-                    <input type="date" name="birthday" placeholder="Birthday" autocomplete="off" required>
+                    <input type="email" name="email" placeholder="Email" autocomplete="off">
+                    <input type="text" name="birthday" placeholder="Birthday" autocomplete="off" onfocus="this.type='date'" onblur="this.type='date'">
                 </div>
-                <input type="text" name="address" placeholder="Address" autocomplete="off" required>
-                <textarea name="message" rows="10" placeholder="Message" autocomplete="off" required></textarea>
+                <input type="text" name="address" placeholder="Address" autocomplete="off">
+                <textarea name="message" rows="10" placeholder="Message" autocomplete="off"></textarea>
                 <div class="submit">
                     <input class="btn btn-primary" type="submit" value="SUBMIT" name="submit" onclick="clearForm()">
                 </div>
@@ -74,7 +74,7 @@
                     <div class="aside__wrapper">
                         <h2>Fill out the form.</h2>
                         <p>Looking forward to work with you! Expect an email confirmation in 1-2 business
-                            days. While waiting, check out our blogposts <a style="text-decoration: underline;" href="blogs.html">here</a>.
+                            days. While waiting, check out our blogposts <a style="text-decoration: underline;" href="blog/leveraging-web-development-for-seamless-deployment-of-machine-learning-models.html">here</a>.
                         </p>
                         <ul class="contact__socials">
                             <li><a href="https://github.com/dexdevtech" target="_blank"><i class="uil uil-github"></i></a></li>
@@ -112,7 +112,7 @@
                 <div class="newsletter">
                     <div class="newsletter-button">
                         <form method="post" autocomplete="off" name="google-sheet-newsletter" id="regform_newsletter">
-                            <input type="email" name="email" placeholder="Newsletter" autocomplete="off" required>
+                            <input type="email" name="email" placeholder="Newsletter" autocomplete="off">
                             <input type="submit" value="SUBSCRIBE" name="submit" onclick="clearForNewsletter()">
                         </form>
                     </div>
@@ -175,6 +175,5 @@
             }, 11000)
         }
     </script>
-
 </body>
 </html>
